@@ -5,7 +5,7 @@ class TestCplxMethods(unittest.TestCase):
     
      def test_r(self):
          m = Cplx(1,1)
-         assertAlmostEqual(m.r(), 2**0.5)
+         assertTrue(abs(m.r()- 2**0.5) < 0.0000001)
 
 
 
