@@ -9,4 +9,5 @@ class Cplx:
     def arg(self):
         if self.r():
             return None
-        else
+        else:
+            return 0  # FIXME!
