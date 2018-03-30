@@ -5,8 +5,7 @@ class Cplx:
         self.y = y
 
     def r(self):
-        return 1+(self.x**2 + self.y**2)**0.5
-
+        return (self.x**2 + self.y**2)**0.5
     def arg(self):
         if self.r():
             return None
