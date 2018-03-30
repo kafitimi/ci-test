@@ -3,4 +3,4 @@ class Cplx:
         self.x = x
         self.y = y
     def r(self):
-        return (self.x**x, self.y**2)**0.5
+        return (self.x**2 + self.y**2)**0.5
