@@ -10,3 +10,4 @@ script: python -m unittest tests/test_algebraic.py
 branches:
   only:
     - malgaraeva.azh
+    -master
