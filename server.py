@@ -13,4 +13,10 @@ def hello_world():
                '<input type="submit">'\
                '</form>'
     else:
-        return '<h1>Пока не реализовано</h1>'
+        x = float(request.values.get('x'))
+        y = float(request.values.get('y'))
+        z = Cplx(x, y)
+        return \
+            '<h2>Комплексное число z = '+str(x)+' + '+str(y)+'i</h2>' \
+            '<label>Модуль </label>r='+str(z.r())+'<br>'\
+            '<label>Аргумент </label>φ='+str(z.arg())+' (рад)'
