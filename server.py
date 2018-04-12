@@ -3,6 +3,7 @@ from cplx import *
 
 app = Flask(__name__)
 
+
 @app.route('/', methods=['POST', 'GET'])
 def hello_world():
     if request.method == 'GET':
@@ -18,5 +19,5 @@ def hello_world():
         z = Cplx(x, y)
         return \
             '<h2>Комплексное число z = '+str(x)+' + '+str(y)+'i</h2>' \
-            '<label>Модуль </label>r='+str(z.r())+'<br>'\
+            '<label>Модуль </label>r='+str(z.r())+'<br>' \
             '<label>Аргумент </label>φ='+str(z.arg())+' (рад)'
