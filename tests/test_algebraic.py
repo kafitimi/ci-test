@@ -1,6 +1,6 @@
 import unittest
 from cplx import *
-
+#test
 
 class TestCplxMethods(unittest.TestCase):
     def test_r(self):
@@ -11,7 +11,6 @@ class TestCplxMethods(unittest.TestCase):
         i = Cplx(1, 1)
         self.assertTrue(i.arg() == 0.7853981633974483)
         print("тест")
-
 
 if __name__ == '__main__':
     unittest.main()
