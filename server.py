@@ -17,5 +17,5 @@ def hello_world():
         y = float(request.values.get('y'))
         z = Cplx(x,y)      
         return '<h2>Комплексное число z = ' +str(x)+ ' + ' +str(y)+ 'i</h2>' \
-               '<label>Модуль </label>r=' +str(i.r())+ '<br>'\
+               '<label>Модуль </label>r=' +str(z.r())+ '<br>'\
                '<label>Аргумент φ = ' +str(z.arg())+ ' (рад)</label>'
