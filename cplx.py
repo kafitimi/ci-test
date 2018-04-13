@@ -13,7 +13,7 @@ class Cplx:
             if self.x>0:
                 result=math.atan2(self.y, self.x)
             if self.x<0 and self.y>=0:
-                result=math.pi+math.atan2(self.y, self.x)
+                result=math.atan2(self.y, self.x)
             if self.x<0 and self.y<0:
                 result=-math.pi+math.atan2(self.y, self.x)
             if self.x==0 and self.y>0:
